@@ -17,4 +17,7 @@ ln -f -s bash ~/.bash
 ln -f -s vimrc ~/.vimrc
 ln -f -s screenrc ~/.screenrc
 
-
+# Manual installs
+# - IntelliJ
+# - Slack
+# - Docker
