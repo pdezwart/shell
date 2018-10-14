@@ -1,21 +1,25 @@
 #!/bin/bash
 
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+BREW_INSTALLED=`command -v brew`
+if [ "$BREW_INSTALLED" = "" ]; then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # Install the standard packages
 brew install tree
 brew install wget
+brew install awscli
 
 # Install a better vim:
-curl -o "~/.vimrc" "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
+curl -s -o "vimrc" "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
 
 # Link in files
-ln -f -s bash_rc ~/.bash_rc
-ln -f -s bash_profile ~/.bash_profile
-ln -f -s bash ~/.bash
-ln -f -s vimrc ~/.vimrc
-ln -f -s screenrc ~/.screenrc
+ln -s $PWD/bashrc ~/.bashrc
+ln -s $PWD/bash_profile ~/.bash_profile
+ln -s $PWD/bash ~/.bash
+ln -s $PWD/vimrc ~/.vimrc
+ln -s $PWD/screenrc ~/.screenrc
 
 # Manual installs
 # - IntelliJ
