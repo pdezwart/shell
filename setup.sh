@@ -7,9 +7,8 @@ if [ "$BREW_INSTALLED" = "" ]; then
 fi
 
 # Install the standard packages
-brew install tree
-brew install wget
-brew install awscli
+brew install tree wget awscli jq
+brew install --with-default-names gnu-sed
 
 # Install a better vim:
 curl -s -o "vimrc" "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
