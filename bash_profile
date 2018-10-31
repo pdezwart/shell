@@ -8,6 +8,8 @@ fi
 # User specific environment and startup programs
 
 PATH=$PATH:$HOME/bin
+GOROOT=~/Documents/workspace/go
+GOPATH=$GOROOT/go
 
 export PATH
 unset USERNAME
