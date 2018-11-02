@@ -7,13 +7,15 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin
-GOROOT=~/Documents/workspace/go
-GOPATH=$GOROOT/go
+export PATH=$PATH:$HOME/bin
+export GOPATH=/Users/pdezwart/Documents/workspace/go
 
-export PATH
+
 unset USERNAME
 
-SVN_EDITOR=vi
-export SVN_EDITOR
+export SVN_EDITOR=vim
 
+# Enable color grep, even when piping through less
+export GREP_OPTIONS='--color=always'
+export GREP_COLOR='1;35;40'
+export LESS=eFRX
