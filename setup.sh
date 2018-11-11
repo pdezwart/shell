@@ -7,7 +7,7 @@ if [ "$BREW_INSTALLED" = "" ]; then
 fi
 
 # Install the standard packages
-brew install tree wget awscli jq gawk golang gradle gnu-tar gzip parallel
+brew install watch tree wget awscli jq gawk golang gradle gnu-tar gzip parallel
 brew install --with-default-names gnu-sed
 
 # Install a better vim:
