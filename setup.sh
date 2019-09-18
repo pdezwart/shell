@@ -7,18 +7,17 @@ if [ "$BREW_INSTALLED" = "" ]; then
 fi
 
 # Install the standard packages
-brew install watch tree wget awscli jq gawk golang gradle gnu-tar gzip parallel
-brew install --with-default-names gnu-sed
+brew install git watch tree wget awscli jq gawk golang gnu-tar gzip parallel gnu-sed
 
 # Install a better vim:
 curl -s -o "vimrc" "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
 
 # Link in files
-ln -s $PWD/bashrc ~/.bashrc
-ln -s $PWD/bash_profile ~/.bash_profile
-ln -s $PWD/bash ~/.bash
-ln -s $PWD/vimrc ~/.vimrc
-ln -s $PWD/screenrc ~/.screenrc
+ln -s $PWD/bashrc ~/.bashrc 2> /dev/null
+ln -s $PWD/bash_profile ~/.bash_profile 2> /dev/null
+ln -s $PWD/bash ~/.bash 2> /dev/null
+ln -s $PWD/vimrc ~/.vimrc 2> /dev/null
+ln -s $PWD/screenrc ~/.screenrc 2> /dev/null
 
 # Manual installs
 # - IntelliJ

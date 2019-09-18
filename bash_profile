@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-export PATH=$PATH:$HOME/bin
+export PATH=/user/local/bin:$PATH:$HOME/bin
 export GOPATH=/Users/pdezwart/Documents/workspace/go
 
 

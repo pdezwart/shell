@@ -15,3 +15,6 @@ alias ..="cd .."
 
 # Depends on brew install gnu-tar, uses GNU Tar instead of BSD tar
 alias tar=gtar
+alias sed=gsed
+alias awk=gawk
+
