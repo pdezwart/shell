@@ -19,6 +19,9 @@ ln -s $PWD/bash ~/.bash 2> /dev/null
 ln -s $PWD/vimrc ~/.vimrc 2> /dev/null
 ln -s $PWD/screenrc ~/.screenrc 2> /dev/null
 
+# Reset the current terminal
+source ~/.bash_profile
+
 # Manual installs
 # - IntelliJ
 # - Slack
